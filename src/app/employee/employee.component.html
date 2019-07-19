@@ -1,20 +1,20 @@
 <form [formGroup]="employeesForm" (ngSubmit)="onSubmit()" class="m-5">
 <div class="example-container">
   <mat-form-field>
-    <input formControlName="fullName" matInput placeholder="FullName" required>
+    <input formControlName="name" matInput placeholder="FullName" required>
   </mat-form-field>
 
   <mat-form-field>
-    <input formControlName="userName" matInput placeholder="UserName">
+    <input formControlName="username" matInput placeholder="UserName">
   </mat-form-field>
 
   <mat-form-field>
     <input formControlName="email" matInput placeholder="Email">
   </mat-form-field>
 
-  <mat-form-field>
-    <input formControlName="phoneNumber" matInput placeholder="PhoneNumber">
-  </mat-form-field>
+  <!-- <mat-form-field>
+    <input formControlName="address" matInput placeholder="address">
+  </mat-form-field> -->
   <button type="submit" [disabled]="!employeesForm.valid" class="btn btn-secondary">Add</button>
 </div>
 </form>
